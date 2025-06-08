@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 1.25rem; /* 20px em rem */
+}
+
+.container {
+    max-width: 75rem; /* 1200px em rem */
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.25rem; /* 20px */
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.accordion {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0.625rem 0; /* 10px */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.emoji {
+ font-size: 1.5rem;
+ margin-right: 0.5rem;
+}
+
+.accordion img {
+    width: 1.875rem; /* 30px */
+    height: auto;
+    margin-right: 0.9375rem; /* 15px */
+}
+
+.panel {
+    padding: 0.625rem; /* 10px */
+    display: none;
+    background-color: #f9f9f9;
+    border-left: 0.25rem solid #ccc; /* 4px */
+    margin-top: 0.3125rem; /* 5px */
+}
+
+.panel ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.panel li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Tablet e acima */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .accordion {
+        font-size: 1.125rem;
+    }
+
+    .panel li {
+        font-size: 1.05rem;
+    }
+}
+
+/* Desktop e monitores grandes */
+@media (min-width: 1024px) {
+    .accordion {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .accordion img {
+        width: 2rem;
+    }
+
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
